@@ -298,6 +298,12 @@
     <a href="https://github.com/ruanyf/jstutorial" target="_blank">GitHub <i class="foundicon-edit"></i></a>
     ```
 
-17. 
+#### console.time,console.timeEnd
 
-
+    // method1
+    var startTime = new Date().getTime();
+    var arr = new Array(1000000)
+        arr.forEach((item,index,array) {
+            array[index] = new Object()
+    })
+    console.log('spend time:' + new Date().getTime() - startTime);
